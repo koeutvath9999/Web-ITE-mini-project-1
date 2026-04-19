@@ -1,0 +1,699 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+       <!-- navbar -->
+    <nav
+      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg shadow-black/5"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5"
+      ></div>
+      <nav class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="./Home.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              Home
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="About.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              About
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="shop.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              Shop
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <div class="relative group inline-block">
+              <!-- Trigger -->
+                Pages 
+              </a>
+
+              <!-- Dropdown -->
+              <ul
+                class="absolute hidden group-hover:block mt-0 pt-3 w-56 bg-amber-50 rounded-2xl p-4 space-y-3 shadow-lg"
+              >
+                <li>
+                  <a
+                    href="Home.html"
+                    class="block hover:text-cyan-400 text-cyan-400 font-semibold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shop.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Logo -->
+          <div class="flex items-center space-x-3 group">
+            <span class="text-2xl font-bold text-gray-700 bg-clip-text">
+              JuicyLite
+            </span>
+          </div>
+          <!-- CTA Button & Mobile Menu -->
+          <div class="flex items-center space-x-4">
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              Shop
+            </button>
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              <img src="./Photo/search.svg" alt="search" />
+            </button>
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              <img src="./Photo/cart-icon.svg" alt="" />
+            </button>
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-btn"
+              class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Mobile Navigation -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-gray-200/50 shadow-lg animate-slide-down"
+        >
+          <div class="px-4 py-6 space-y-4">
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Page</a
+            >
+          </div>
+        </div>
+      </nav>
+    </nav>
+    
+    <!-- Hero section -->
+    <section class="bg-[#FEFCF7] text-gray-600 body-font">
+      <div
+        class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
+      >
+        <div
+          class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
+        >
+          <h1
+            class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
+          >
+            <p class="text-6xl font-primary">Fresh flavours</p>
+            <h2 class="h1-headings text-(--color-primary-2)">Fresh start</h2>
+          </h1>
+          <p class="mb-8 leading-relaxed">
+            Our juices are not just about taste; <br>
+            they're about nourishing your body <br>
+            with essential vitamins, minerals,<br> 
+            and antioxidants.
+          </p>
+          <div class="flex justify-center">
+            <button
+              class="inline-flex text-gray-800 bg-[#ffedaa] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
+              Shop now
+            </button>
+          </div>
+        </div>
+        <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
+          <img
+            class="w-64 md:w-80 z-10 drop-shadow-xl h-150"
+            alt="Orange Juice Big"
+            src="./Photo/hero-01.webp"
+          />
+        </div>
+      </div>
+    </section>
+    
+    <!-- Shop by flavours section -->
+    <section class="bg-(--color-secondary-2) py-16">
+      <div class="container mx-auto px-5">
+        <!-- Title -->
+        <h2 class="title-font text-center text-3xl font-bold mb-10">
+          Shop by flavours
+        </h2>
+        <!-- Flavour cards grid -->
+        <div class="flex flex-wrap justify-center gap-4">
+          <!-- Orange -->
+          <div
+            class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
+          >
+            <img
+              src="./Photo/orange.svg"
+              class="w-12 h-12 object-contain"
+              alt="Orange"
+            />
+            <span class="font-medium text-lg">Orange</span>
+          </div>
+
+          <!-- Mango -->
+          <div
+            class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
+          >
+            <img
+              src="./Photo/mango.avif"
+              class="w-12 h-12 object-contain"
+              alt="Mango"
+            />
+            <span class="font-medium text-lg">Mango</span>
+          </div>
+
+          <!-- Apple -->
+          <div
+            class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
+          >
+            <img
+              src="./Photo/apple.jpg"
+              class="w-12 h-12 object-contain"
+              alt="Apple"
+            />
+            <span class="font-medium text-lg">Apple</span>
+          </div>
+
+          <!-- Kiwi -->
+          <div
+            class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
+          >
+            <img
+              src="./Photo/kiwi.svg"
+              class="w-12 h-12 object-contain"
+              alt="Kiwi"
+            />
+            <span class="font-medium text-lg">Kiwi</span>
+          </div>
+
+          <!-- Watermelon -->
+          <div
+            class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
+          >
+            <img
+              src="./Photo/watermelent.svg"
+              class="w-12 h-12 object-contain"
+              alt="Watermelon"
+            />
+            <span class="font-medium text-lg">Watermelon</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- pubpular Product section -->
+    <section class="bg-(--color-secondary-4) py-16">
+      <div class="container mx-auto px-5">
+        <!-- Title -->
+        <h2 class="title-font text-center text-3xl font-bold mb-10">
+          Popular picks
+        </h2>
+        <!-- Cards grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Grapes card -->
+          <div
+            class="bg-(--color-secondary-1) rounded-3xl p-6 flex flex-col items-center"
+          >
+            <img
+              src="./Photo/Grapesjuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Grapes juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">200 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Grapes juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.9 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 2.0 USD</span
+              >
+            </div>
+          </div>
+
+          <!-- Orange card -->
+          <div
+            class="bg-(--color-secondary-3) rounded-3xl p-6 flex flex-col items-center"
+          >
+            <img
+              src="./Photo/Orangejuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Orange juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">300 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Orange juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.3 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.8USD</span
+              >
+            </div>
+          </div>
+
+          <!-- Strawberry card -->
+          <div class="bg-pink-100 rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/strawberryjuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Strawberry juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">500 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Strawberry juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 2.2 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 2.4 USD</span
+              >
+            </div>
+          </div>
+
+          <!-- Kiwi card -->
+          <div class="bg-green-100 rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/kiwijuice.png"
+              class="w-40 object-contain mb-4"
+              alt="Kiwi juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">100 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Kiwi juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.35 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.45USD</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="bg-green-100 py-16">
+      <div
+        class="container mx-auto px-5 flex flex-col md:flex-row items-center gap-10"
+      >
+        <!-- Left: Big circle with image -->
+        <div class="relative w-80 h-80 md:w-96 md:h-96 flex-shrink-0">
+          <!-- Big pink circle -->
+          <div
+            class="bg-(--color-primary-1) rounded-full w-72 h-72 md:w-80 md:h-80 absolute bottom-0 left-0 flex items-center justify-center"
+          >
+            <p class="text-white font-bold text-center text-lg px-8">
+              Exploring the colorful tapestry of flavors, nutrients, and stories
+              that define JuicyLite
+            </p>
+          </div>
+
+          <!-- Person image (top left) -->
+          <img
+            src="./Photo/people.jpg"
+            class="w-32 h-32 rounded-full object-cover absolute top-0 left-8 border-4 border-white z-10"
+            alt="Person"
+          />
+
+          <!-- Lime image (bottom right) -->
+        </div>
+
+        <!-- Right: Text + icons -->
+        <div class="flex-1">
+          <!-- Title -->
+          <h2 class="title-font text-3xl font-bold mb-4">
+            The potent health benefits enriching every sip of our juices
+          </h2>
+
+          <!-- Description -->
+          <p class="body-font text-gray-600 mb-6">
+            We believe in the transformative power of nature's bounty,
+            encapsulated in every drop of our carefully crafted juices.
+          </p>
+
+          <!-- Button -->
+          <button
+            class="border border-(--color-secondary-3) bg-(--color-secondary-3) px-6 py-3 rounded-xl font-medium mb-10"
+          >
+            Our story
+          </button>
+
+          <!-- Icons grid -->
+          <div class="grid grid-cols-3 gap-6">
+            <div class="flex flex-col items-start gap-2">
+              <img src="./Photo/spon.svg" class="w-10 h-10" alt="No sugar" />
+              <p class="text-sm text-gray-600">No added sugar</p>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+              <img
+                src="./Photo/plain.svg"
+                class="w-10 h-10"
+                alt="Plant based"
+              />
+              <p class="text-sm text-gray-600">100% plant-based</p>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+              <img src="./Photo/dairy.svg" class="w-10 h-10" alt="Dairy free" />
+              <p class="text-sm text-gray-600">Dairy-free</p>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+              <img src="./Photo/good.svg" class="w-10 h-10" alt="Fiber" />
+              <p class="text-sm text-gray-600">Good source of fiber</p>
+            </div>
+
+            <div class="flex flex-col items-start gap-2">
+              <img src="./Photo/nothing.svg" class="w-10 h-10" alt="Natural" />
+              <p class="text-sm text-gray-600">Nothing artificial</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscribe + Products section -->
+    <!-- <section class="relative overflow-hidden"> -->
+    <!-- Top part - light blue background -->
+    <div class="bg-(--color-secondary-2) py-16 text-center relative">
+      <!-- Orange slice decoration (left) -->
+      <img
+        src=""
+        class="absolute left-0 top-1/2 -translate-y-1/2 w-24 opacity-80"
+        alt=""
+      />
+      <!-- Title -->
+      <h2 class="title-font text-3xl font-bold mb-6 px-5">
+        Discover one-of-a-kind flavors in our special menu
+      </h2>
+
+      <!-- Email input + button -->
+      <div class="flex flex-col items-center gap-3">
+        <input
+          type="email"
+          placeholder="Enter email address"
+          class="border border-gray-200 rounded-full px-6 py-3 w-80 text-sm outline-none"
+        />
+        <button
+          class="bg-(--color-secondary-3) border border-(--color-secondary-3) px-8 py-3 rounded-xl font-medium"
+        >
+          Subscribe
+        </button>
+      </div>
+    </div>
+
+    <!-- Bottom part - purple/lavender background -->
+    <div class="bg-(--color-secondary-1) pt-32 pb-16 px-5">
+      <!-- Cards -->
+      <div
+        class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl"
+      >
+        <!-- Green Apple card -->
+        <div
+          class="bg-white rounded-3xl p-6 flex flex-col items-center shadow-sm"
+        >
+          <img
+            src="./Photo/Grapesjuice.webp"
+            class="w-40 object-contain mb-4"
+            alt="Green Apple juice"
+          />
+          <p class="text-sm text-gray-400 mb-1">200 ML</p>
+          <p class="title-font text-lg font-bold mb-2">Green Apple juice</p>
+          <div class="flex items-center gap-3">
+            <span class="font-bold">$ 100.00 USD</span>
+            <span class="text-gray-400 line-through text-sm">$ 110.00 USD</span>
+          </div>
+        </div>
+        <!-- Blueberry card -->
+        <div
+          class="bg-white rounded-3xl p-6 flex flex-col items-center shadow-sm"
+        >
+          <img
+            src="./Photo/strawberryjuice.webp"
+            class="w-40 object-contain mb-4"
+            alt="Blueberry juice"
+          />
+          <p class="text-sm text-gray-400 mb-1">200 ML</p>
+          <p class="title-font text-lg font-bold mb-2">Blueberry juice</p>
+          <div class="flex items-center gap-3">
+            <span class="font-bold">$ 200.00 USD</span>
+            <span class="text-gray-400 line-through text-sm">$ 250.00 USD</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Curved divider between blue and purple -->
+    <div class="absolute left-0 right-0 overflow-hidden" style="top: 52%">
+      <svg viewBox="0 0 1440 80" xmlns="http://www.w3.org/2000/svg"></svg>
+    </div>
+    <!-- </section> -->
+    <section
+      class="bg-(--color-secondary-4) rounded-3xl mx-5 my-8 overflow-hidden relative"
+    >
+      <div
+        class="container mx-auto px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6"
+      >
+        <!-- Left: Text content -->
+        <div class="flex-1">
+          <!-- 30% OFF badge -->
+          <div class="flex items-center gap-2 mb-3">
+            <span class="text-(--color-primary-1) font-bold text-lg italic"
+              >30% OFF</span
+            >
+            <img src="./Photo/style.svg" class="w-8 h-8" alt="" />
+          </div>
+
+          <!-- Title -->
+          <h2 class="title-font text-2xl md:text-3xl font-bold mb-2">
+            Taste the excitement
+          </h2>
+
+          <!-- Subtitle -->
+          <p class="body-font font-bold text-base md:text-lg mb-6">
+            Our new pomegranate juice is Here!
+          </p>
+
+          <!-- Button -->
+          <button
+            class="bg-(--color-secondary-3) border border-(--color-secondary-3) px-6 py-2 rounded-xl text-sm font-medium"
+          >
+            Shop now
+          </button>
+        </div>
+
+        <!-- Right: Product image with bubble decorations -->
+        <div
+          class="relative flex-1 flex justify-center items-center min-h-[200px]"
+        >
+          <!-- Bubble decorations -->
+          <div
+            class="absolute w-32 h-32 rounded-full bg-pink-200 opacity-40 top-0 right-10"
+          ></div>
+          <div
+            class="absolute w-20 h-20 rounded-full bg-pink-200 opacity-30 top-5 right-40"
+          ></div>
+          <div
+            class="absolute w-10 h-10 rounded-full bg-pink-300 opacity-30 bottom-5 right-20"
+          ></div>
+          <div
+            class="absolute w-6 h-6 rounded-full bg-pink-300 opacity-40 top-10 right-24"
+          ></div>
+
+          <!-- Product image -->
+          <img
+            src="./Photo/Grapesjuice.webp "
+            class="w-48 md:w-64 object-contain relative z-10 rotate-12 h-64"
+            alt="Pomegranate juice"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg mt-auto">
+          <div
+            class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+          >
+            <!-- Column 1: Company Info -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Page</h3>
+              <p class="text-gray-500 mt-3">Home</p>
+              <p class="text-gray-500 mt-2">About</p>
+              <p class="text-gray-500 mt-2">Shop</p>
+              <p class="text-gray-500 mt-2">Block</p>
+              <p class="text-gray-500 mt-2">Contat</p>
+              <p class="text-gray-500 mt-2">Privacy Policy</p>
+            </div>
+
+            <!-- Column 2: Quick Links -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Utility</h3>
+              <ul class="mt-3 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Style Guide</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Instructions</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Changelog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Licenses</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Link in Bio</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 3: Customer Service -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">
+                Customer Service
+              </h3>
+              <ul class="mt-3 space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >FAQs</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Shipping & Returns</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-500 hover:text-indigo-600 transition"
+                    >Terms & Conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 4: Newsletter Subscription -->
+            <div>
+              <h3 class="text-xl font-semibold text-gray-800">Stay Updated</h3>
+              <p class="text-gray-500 mt-3">
+                Subscribe to our newsletter for exclusive deals and updates.
+              </p>
+              <div class="mt-4 flex">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  class="w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1"
+                />
+                <button
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition"
+                >
+                  Subscribe
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Bottom Bar -->
+    </footer>
+  </body>
+</html>

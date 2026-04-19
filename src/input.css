@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Sono:wght,MONO@200..800,1&display=swap");
+@import "tailwindcss";
+@tailwind utilities;
+
+:root {
+  --font-family-heading: "Inter", sans-serif;
+  --color-heading: #1a1a2e;
+}
+
+:root {
+  /* Primary */
+  --color-primary-1: #cc64a1;
+  --color-primary-2: #00aeef;
+  --color-primary-3: #ffd63f;
+
+  /* Secondary */
+  --color-secondary-1: #ffcfeb;
+  --color-secondary-2: #baecff;
+  --color-secondary-3: #ffedaa;
+  --color-secondary-4: #ffebc2;
+
+  /* Others */
+  --color-black: #282107;
+  --color-gray-1: #666562;
+  --color-gray-2: #bfbcb5;
+  --color-white: #ffffff;
+}
+
+@layer components {
+  .title-font {
+    color: var(--color-black);
+  }
+}
+
+@layer components {
+  .h1-headings {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: var(--font-family-heading);
+    color: var(--color-heading);
+    font-size: 50px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .h2-headings {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: var(--font-family-heading);
+    color: var(--color-heading);
+    font-size: 40px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .h3-headings {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: var(--font-family-heading);
+    color: var(--color-heading);
+    font-size: 30px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+}
+
+@layer components {
+  .h4-headings {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    font-family: var(--font-family-heading);
+    color: var(--color-heading);
+    font-size: 26px;
+    line-height: 1.2em;
+    font-weight: 600;
+  }
+}
+
+@font-face {
+  font-family: "Sono";
+  src: url("../fonts/Sono_Proportional-Regular.ttf") format("truetype");
+  font-weight: 100 900;
+}
+
+@theme {
+  --font-primary: "Sono", monospace;
+}

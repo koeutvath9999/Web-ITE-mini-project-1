@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>shop</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+        <!-- navbar -->
+    <nav
+      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg shadow-black/5"
+    >
+      <div
+        class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5"
+      ></div>
+
+      <nav class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-16">
+          <!-- Desktop Navigation -->
+          <div class="hidden md:flex items-center space-x-8">
+            <a
+              href="./Home.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              Home
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="About.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              About
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <a
+              href="shop.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+            >
+              Shop
+              <span
+                class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
+              ></span>
+            </a>
+            <div class="relative group inline-block">
+              <!-- Trigger -->
+                Pages 
+              </a>
+
+              <!-- Dropdown -->
+              <ul
+                class="absolute hidden group-hover:block mt-0 pt-3 w-56 bg-amber-50 rounded-2xl p-4 space-y-3 shadow-lg"
+              >
+                <li>
+                  <a
+                    href="Home.html"
+                    class="block hover:text-cyan-400 text-cyan-400 font-semibold"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="shop.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Shop</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="blog.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="block hover:text-cyan-400 text-gray-800"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- Logo -->
+          <div class="flex items-center space-x-3 group">
+            <span class="text-2xl font-bold text-gray-700 bg-clip-text">
+              JuicyLite
+            </span>
+          </div>
+
+          <!-- CTA Button & Mobile Menu -->
+          <div class="flex items-center space-x-4">
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              Shop
+            </button>
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              <img src="./Photo/search.svg" alt="search" />
+            </button>
+            <button
+              class="hidden md:block bg-gradient-to-r from-amber-400 to-amber-500 text-white px-6 py-2 rounded-full font-medium hover:from-amber-300 hover:to-amber-600 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105 transform"
+            >
+              <img src="./Photo/cart-icon.svg" alt="" />
+            </button>
+            <!-- Mobile menu button -->
+            <button
+              id="mobile-menu-btn"
+              class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors duration-200"
+            >
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div
+          id="mobile-menu"
+          class="md:hidden hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-lg border-b border-gray-200/50 shadow-lg animate-slide-down"
+        >
+          <div class="px-4 py-6 space-y-4">
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Home</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >About</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="block text-gray-700 hover:text-blue-600 font-medium py-2 transition-colors duration-200"
+              >Page</a
+            >
+          </div>
+        </div>
+      </nav>
+    </nav>
+    
+    <!-- Hero Inner -->
+    <section class="bg-[#b3e5f5] px-6 py-10 min-h-5/12">
+      <h1 class="text-center text-4xl font-extrabold text-gray-900 mb-8">
+        Shop
+      </h1>
+      <!-- Filter Buttons -->
+      <div class="flex flex-wrap justify-center gap-3 m-20">
+        <button
+          class="bg-[#d4e88a] text-gray-700 font-semibold px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          All Products
+        </button>
+        <button
+          class="bg-[#d4598a] text-white font-semibold ml-4 px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          Orange
+        </button>
+        <button
+          class="bg-[#d4598a] text-white font-semibold ml-4 px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          Mango
+        </button>
+        <button
+          class="bg-[#d4598a] text-white font-semibold ml-4 px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          Apple
+        </button>
+        <button
+          class="bg-[#d4598a] text-white font-semibold ml-4 px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          Kiwi
+        </button>
+        <button
+          class="bg-[#d4598a] text-white font-semibold ml-4 px-6 py-2.5 rounded-xl hover:opacity-80 transition"
+        >
+          Watermelon
+        </button>
+      </div>
+    </section>
+
+    <!-- pubpular Product section -->
+    <section class="bg-(--color-secondary-4) py-12">
+      <div class="container mx-auto px-5">
+        <!-- Title -->
+        <h2 class="title-font text-center text-3xl font-bold mb-10">
+          Popular picks
+        </h2>
+        <!-- Cards grid -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- Grapes card -->
+          <div
+            class="bg-(--color-secondary-1) rounded-3xl p-6 flex flex-col items-center"
+          >
+            <img
+              src="./Photo/Grapesjuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Grapes juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">200 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Grapes juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.9 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 2.5 USD</span
+              >
+            </div>
+          </div>
+
+          <!-- Orange card -->
+          <div
+            class="bg-(--color-secondary-3) rounded-3xl p-6 flex flex-col items-center"
+          >
+            <img
+              src="./Photo/Orangejuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Orange juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">300 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Orange juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.3 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.8 USD</span
+              >
+            </div>
+          </div>
+          <!-- Strawberry card -->
+          <div class="bg-pink-100 rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/strawberryjuice.webp"
+              class="w-40 object-contain mb-4"
+              alt="Strawberry juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">500 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Strawberry juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 2.2 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 2.4 USD</span
+              >
+            </div>
+          </div>
+
+          <!-- Kiwi card -->
+          <div class="bg-green-100 rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/kiwijuice.png"
+              class="w-40 object-contain mb-4"
+              alt="Kiwi juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">100 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Kiwi juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.3 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.45 USD</span
+              >
+            </div>
+          </div>
+          <div class="bg-[#b3e5f5] rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/BlueBory.png"
+              class="w-40 object-contain mb-4"
+              alt="Kiwi juice"
+            />
+            <p class="text-sm bg-[#D3DBFF] text-gray-500 mb-1">100 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Blueberry juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.4 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.45 USD</span
+              >
+            </div>
+          </div>
+          <div class="bg-[#FFFEC7] rounded-3xl p-6 flex flex-col items-center">
+            <img
+              src="./Photo/pineapple juice.png"
+              class="w-40 object-contain mb-4"
+              alt="Kiwi juice"
+            />
+            <p class="text-sm text-gray-500 mb-1">100 ML</p>
+            <p class="title-font text-xl font-bold mb-2">Blueberry juice</p>
+            <div class="flex items-center gap-3">
+              <span class="font-bold">$ 1.40 USD</span>
+              <span class="text-gray-400 line-through text-sm"
+                >$ 1.45 USD</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Benefit Section -->
+    <section class="bg-[#EAF3F8] py-16">
+      <div class="container mx-auto px-5">
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <!-- No added sugar -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="./Photo/NoSuger.svg"
+              class="w-14 h-14 object-contain"
+              alt="No sugar"
+            />
+            <p class="text-sm text-gray-500 text-center">No added sugar</p>
+          </div>
+
+          <!-- 100% plant-based -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="./Photo/plain.svg"
+              class="w-14 h-14 object-contain"
+              alt="Plant based"
+            />
+            <p class="text-sm text-gray-500 text-center">100% plant-based</p>
+          </div>
+
+          <!-- Dairy-free -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="./Photo/dairy.svg"
+              class="w-14 h-14 object-contain"
+              alt="Dairy free"
+            />
+            <p class="text-sm text-gray-500 text-center">Dairy-free</p>
+          </div>
+
+          <!-- Good source of fiber -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="./Photo/plain1.svg"
+              class="w-14 h-14 object-contain"
+              alt="Fiber"
+            />
+            <p class="text-sm text-gray-500 text-center">
+              Good source of fiber
+            </p>
+          </div>
+
+          <!-- Nothing artificial -->
+          <div class="flex flex-col items-center gap-3">
+            <img
+              src="./Photo/nothing.svg"
+              class="w-14 h-14 object-contain"
+              alt="Natural"
+            />
+            <p class="text-sm text-gray-500 text-center">Nothing artificial</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="bg-gray-200">
+      <section class="container mx-auto px-5 py-16 text-center">
+        <!-- Title -->
+        <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+          sip, snap, share
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-lg md:text-xl text-gray-700 mb-6">
+          Follow our Instagram feed
+        </p>
+
+        <!-- Instagram Link -->
+        <div class="flex items-center justify-center gap-3">
+          <!-- Icon -->
+          <div
+            class="w-10 h-10 flex items-center justify-center border-2 border-pink-400 rounded-lg"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-5 h-5 text-pink-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M16 11a4 4 0 11-8 0 4 4 0 018 0zm2.5-6h-13A2.5 2.5 0 003 7.5v9A2.5 2.5 0 005.5 19h13a2.5 2.5 0 002.5-2.5v-9A2.5 2.5 0 0018.5 5z"
+              />
+            </svg>
+          </div>
+
+          <!-- Text -->
+          <span class="text-xl font-semibold text-blue-500 italic">
+            #JuicyLite
+          </span>
+        </div>
+      </section>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white shadow-lg mt-auto">
+      <div
+        class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+      >
+        <!-- Column 1: Company Info -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Page</h3>
+          <p class="text-gray-500 mt-3">Home</p>
+          <p class="text-gray-500 mt-2">About</p>
+          <p class="text-gray-500 mt-2">Shop</p>
+          <p class="text-gray-500 mt-2">Block</p>
+          <p class="text-gray-500 mt-2">Contat</p>
+          <p class="text-gray-500 mt-2">Privacy Policy</p>
+        </div>
+
+        <!-- Column 2: Quick Links -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Utility</h3>
+          <ul class="mt-3 space-y-2">
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Style Guide</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Instructions</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Changelog</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Licenses</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Link in Bio</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 3: Customer Service -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Customer Service</h3>
+          <ul class="mt-3 space-y-2">
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >FAQs</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Shipping & Returns</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Privacy Policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-500 hover:text-indigo-600 transition"
+                >Terms & Conditions</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Column 4: Newsletter Subscription -->
+        <div>
+          <h3 class="text-xl font-semibold text-gray-800">Stay Updated</h3>
+          <p class="text-gray-500 mt-3">
+            Subscribe to our newsletter for exclusive deals and updates.
+          </p>
+          <div class="mt-4 flex">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1"
+            />
+            <button
+              class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition"
+            >
+              Subscribe
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Bottom Bar -->
+    </footer>
+  </body>
+</html>
