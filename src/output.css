@@ -514,6 +514,12 @@
   }
   .h-screen {
     height: 100vh;
+<<<<<<< HEAD
+=======
+  }
+  .min-h-5 {
+    min-height: calc(var(--spacing) * 5);
+>>>>>>> 96bce72497760fc63684f2e042a814d3f3bb75be
   }
   .min-h-5\/12 {
     min-height: calc(5 / 12 * 100%);
@@ -1615,6 +1621,7 @@
       background-color: var(--color-white);
     }
   }
+<<<<<<< HEAD
   .dark\:text-gray-50 {
     &:where(.dark, .dark *) {
       color: var(--color-gray-50);
@@ -1630,6 +1637,8 @@
       color: var(--color-gray-800);
     }
   }
+=======
+>>>>>>> 96bce72497760fc63684f2e042a814d3f3bb75be
   .dark\:text-white {
     &:where(.dark, .dark *) {
       color: var(--color-white);

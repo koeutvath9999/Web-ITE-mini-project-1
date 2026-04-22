@@ -13,6 +13,13 @@ localStorage.theme = "dark";
 localStorage.removeItem("theme");
 
 function toggleDarkMode() {
+<<<<<<< HEAD
   const isDark = document.documentElement.classList.toggle("dark");
   localStorage.theme = isDark ? "dark" : "light";
 }
+=======
+const isDark = document.documentElement.classList.toggle
+("dark");
+localStorage. theme = isDark ? "dark": "light"
+}
+>>>>>>> 96bce72497760fc63684f2e042a814d3f3bb75be
