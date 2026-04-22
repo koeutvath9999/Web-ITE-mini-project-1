@@ -6,22 +6,22 @@
     <title>About</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
-    <!-- navbar -->
+  <body class="dark:bg-gray-800">
+
+           <!-- navbar -->
     <nav
-      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg shadow-black/5"
+      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 dark:bg-gray-800"
     >
       <div
         class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5"
       ></div>
-
       <nav class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex items-center justify-between h-16">
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a
-              href="./Home.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               Home
               <span
@@ -30,7 +30,7 @@
             </a>
             <a
               href="About.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               About
               <span
@@ -39,14 +39,14 @@
             </a>
             <a
               href="shop.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               Shop
               <span
                 class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
               ></span>
             </a>
-            <div class="relative group inline-block">
+            <div class="relative group inline-block dark:text-gray-50">
               <!-- Trigger -->
                 Pages 
               </a>
@@ -57,7 +57,7 @@
               >
                 <li>
                   <a
-                    href="Home.html"
+                    href="./index.html"
                     class="block hover:text-cyan-400 text-cyan-400 font-semibold"
                     >Home</a
                   >
@@ -95,11 +95,10 @@
           </div>
           <!-- Logo -->
           <div class="flex items-center space-x-3 group">
-            <span class="text-2xl font-bold text-gray-700 bg-clip-text">
+            <span class="text-2xl font-bold text-gray-700 bg-clip-text dark:text-gray-50">
               JuicyLite
             </span>
           </div>
-
           <!-- CTA Button & Mobile Menu -->
           <div class="flex items-center space-x-4">
             <button
@@ -117,6 +116,36 @@
             >
               <img src="./Photo/cart-icon.svg" alt="" />
             </button>
+            <!-- dark-mode -->
+
+            <div>
+      <button
+        onclick="(() => document.body.classList.toggle('dark'))()"
+        class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+      >
+        <svg
+          class="fill-violet-700 block dark:hidden"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+          ></path>
+        </svg>
+        <svg
+          class="fill-yellow-500 hidden dark:block"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+            </div>
+
             <!-- Mobile menu button -->
             <button
               id="mobile-menu-btn"
@@ -138,7 +167,6 @@
             </button>
           </div>
         </div>
-
         <!-- Mobile Navigation -->
         <div
           id="mobile-menu"
@@ -172,23 +200,23 @@
 
     <!-- About Hero Section -->
     <section
-      class="bg-(--color-secondary-1) py-16 overflow-hidden min-h-[500px]"
+      class="bg-(--color-secondary-1) py-16 overflow-hidden min-h-[500px] dark:bg-gray-800"
     >
       <div
-        class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-10"
+        class="container mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-10 "
       >
         <!-- Left: Text content -->
         <div class="flex-1 max-w-lg">
           <!-- Title -->
           <h1
-            class="title-font text-4xl md:text-5xl font-black text-(--color-black) mb-6 leading-tight"
+            class="h1-headings text-(--color-primary-1) font-primary dark:text-gray-50"
           >
             Crafting a Story of Juicing Passion
           </h1>
 
           <!-- Description -->
           <p
-            class="body-font text-3xl text-gray-500 text-sm md:text-base leading-relaxed max-w-sm"
+            class="body-font text-3xl text-gray-500 text-sm md:text-base leading-relaxed max-w-sm dark:text-gray-50"
           >
             Crafting a story of juicing passion encapsulates our journey fueled
             by a profound love for juicing. From the first squeeze to the latest
@@ -198,7 +226,7 @@
 
         <!-- Right: Product images -->
         <div
-          class="relative flex-1 flex justify-center items-end min-h-[350px] md:min-h-[450px]"
+          class="relative flex-1 flex justify-center items-end min-h-[350px] md:min-h-[450px] "
         >
           <!-- Juice carton (tilted left) -->
           <img
@@ -225,7 +253,7 @@
     </section>
 
     <!-- Benefit Section -->
-    <section class="bg-(--color-secondary-2) py-16">
+    <section class="bg-(--color-secondary-2) py-16 dark:bg-gray-800">
       <div class="container mx-auto px-5">
         <div class="grid grid-cols-2 md:grid-cols-5 gap-8">
           <!-- No added sugar -->
@@ -235,7 +263,7 @@
               class="w-14 h-14 object-contain"
               alt="No sugar"
             />
-            <p class="text-sm text-gray-500 text-center">No added sugar</p>
+            <p class="text-sm text-gray-500 text-center dark:text-gray-50">No added sugar</p>
           </div>
 
           <!-- 100% plant-based -->
@@ -245,7 +273,7 @@
               class="w-14 h-14 object-contain"
               alt="Plant based"
             />
-            <p class="text-sm text-gray-500 text-center">100% plant-based</p>
+            <p class="text-sm text-gray-500 text-center dark:text-gray-50">100% plant-based</p>
           </div>
 
           <!-- Dairy-free -->
@@ -255,7 +283,7 @@
               class="w-14 h-14 object-contain"
               alt="Dairy free"
             />
-            <p class="text-sm text-gray-500 text-center">Dairy-free</p>
+            <p class="text-sm text-gray-500 text-center dark:text-gray-50">Dairy-free</p>
           </div>
 
           <!-- Good source of fiber -->
@@ -265,7 +293,7 @@
               class="w-14 h-14 object-contain"
               alt="Fiber"
             />
-            <p class="text-sm text-gray-500 text-center">
+            <p class="text-sm text-gray-500 text-center dark:text-gray-50">
               Good source of fiber
             </p>
           </div>
@@ -277,15 +305,15 @@
               class="w-14 h-14 object-contain"
               alt="Natural"
             />
-            <p class="text-sm text-gray-500 text-center">Nothing artificial</p>
+            <p class="text-sm text-gray-500 text-center dark:text-gray-50">Nothing artificial</p>
           </div>
         </div>
       </div>
     </section>
     
     <!--Spit About Section  -->
-    <section
-      style="background: #e8e0f0; padding: 60px 48px; font-family: sans-serif"
+    <section 
+      class="background: #e8e0f0; padding: 60px 48px; font-family: sans-serif dark:bg-gray-800 m-5"
     >
       <div
         style="
@@ -312,19 +340,10 @@
         </div>
 
         <!-- Right: Content -->
-        <div style="display: flex; flex-direction: column">
-          <h2
-            style="
-              font-size: 32px;
-              font-weight: 700;
-              color: #1a1a1a;
-              line-height: 1.2;
-              margin: 0 0 16px;
-            "
-          >
+        <div class="display: flex; flex-direction: column dark:text-gray-50 text-4xl m-5" >
             Our commitment to social responsibility
           </h2>
-          <p
+          <p class="dark:text-gray-50"
             style="
               font-size: 14px;
               color: #444;
@@ -378,7 +397,7 @@
               </div>
             </div>
             <div>
-              <div style="font-size: 26px; font-weight: 700; color: #1a1a1a">
+              <div style="font-size: 26px; font-weight: 700; color: #1a1a1a" >
                 400+
               </div>
               <div style="font-size: 13px; color: #555">Happy customers</div>
@@ -389,7 +408,7 @@
     </section>
 
     <!-- path vidoe -->
-    <section class="bg-[#e8f4f8] px-6 py-10">
+    <section class="bg-[#e8f4f8] px-6 py-10 dark:bg-gray-800">
       <!-- Video Container -->
       <div
         class="relative w-full max-w-4xl mx-auto rounded-xl overflow-hidden aspect-video bg-black mb-10"
@@ -463,115 +482,115 @@
       </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-white shadow-lg mt-auto">
+        <!-- Footer -->
+    <footer class="bg-white shadow-lg mt-auto dark:bg-gray-800">
           <div
             class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           >
             <!-- Column 1: Company Info -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Page</h3>
-              <p class="text-gray-500 mt-3">Home</p>
-              <p class="text-gray-500 mt-2">About</p>
-              <p class="text-gray-500 mt-2">Shop</p>
-              <p class="text-gray-500 mt-2">Block</p>
-              <p class="text-gray-500 mt-2">Contat</p>
-              <p class="text-gray-500 mt-2">Privacy Policy</p>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Page</h3>
+              <p class="text-gray-500 mt-3 dark:text-gray-50">Home</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">About</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Shop</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Block</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Contat</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Privacy Policy</p>
             </div>
 
-            <!--Quick Links -->
+            <!-- Column 2: Quick Links -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Utility</h3>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Utility</h3>
               <ul class="mt-3 space-y-2">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Style Guide</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Instructions</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Changelog</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Licenses</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Link in Bio</a
                   >
                 </li>
               </ul>
             </div>
 
-            <!--Customer Service -->
+            <!-- Column 3: Customer Service -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">
                 Customer Service
               </h3>
               <ul class="mt-3 space-y-2">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >FAQs</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Shipping & Returns</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Terms & Conditions</a
                   >
                 </li>
               </ul>
             </div>
 
-            <!-- Newsletter Subscription -->
+            <!-- Column 4: Newsletter Subscription -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Stay Updated</h3>
-              <p class="text-gray-500 mt-3">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Stay Updated</h3>
+              <p class="text-gray-500 mt-3 dark:text-gray-50">
                 Subscribe to our newsletter for exclusive deals and updates.
               </p>
-              <div class="mt-4 flex">
+              <div class="mt-4 flex dark:text-gray-50">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   class="w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1"
                 />
                 <button
-                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition dark:text-gray-50"
                 >
                   Subscribe
                 </button>
@@ -580,5 +599,6 @@
           </div>
           <!-- Bottom Bar -->
     </footer>
+
   </body>
 </html>

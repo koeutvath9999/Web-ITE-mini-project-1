@@ -6,10 +6,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="./src/output.css" />
   </head>
-  <body>
+  <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-300">
+    
        <!-- navbar -->
     <nav
-      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 shadow-lg shadow-black/5"
+      class="relative bg-white/80 backdrop-blur-lg border-b border-gray-200/50 sticky top-0 z-50 dark:bg-gray-800"
     >
       <div
         class="absolute inset-0 bg-gradient-to-r from-blue-500/5 to-purple-500/5"
@@ -19,8 +20,8 @@
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
             <a
-              href="./Home.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              href="./index.html"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               Home
               <span
@@ -29,7 +30,7 @@
             </a>
             <a
               href="About.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               About
               <span
@@ -38,14 +39,14 @@
             </a>
             <a
               href="shop.html"
-              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group"
+              class="text-gray-700 hover:text-blue-600 font-medium transition-colors duration-200 relative group dark:text-gray-50"
             >
               Shop
               <span
                 class="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"
               ></span>
             </a>
-            <div class="relative group inline-block">
+            <div class="relative group inline-block dark:text-gray-50">
               <!-- Trigger -->
                 Pages 
               </a>
@@ -56,7 +57,7 @@
               >
                 <li>
                   <a
-                    href="Home.html"
+                    href="./index.html"
                     class="block hover:text-cyan-400 text-cyan-400 font-semibold"
                     >Home</a
                   >
@@ -94,7 +95,7 @@
           </div>
           <!-- Logo -->
           <div class="flex items-center space-x-3 group">
-            <span class="text-2xl font-bold text-gray-700 bg-clip-text">
+            <span class="text-2xl font-bold text-gray-700 bg-clip-text dark:text-gray-50">
               JuicyLite
             </span>
           </div>
@@ -115,6 +116,36 @@
             >
               <img src="./Photo/cart-icon.svg" alt="" />
             </button>
+            <!-- dark-mode -->
+
+            <div>
+      <button
+        onclick="(() => document.body.classList.toggle('dark'))()"
+        class="h-12 w-12 rounded-lg p-2 hover:bg-gray-100 dark:hover:bg-gray-700"
+      >
+        <svg
+          class="fill-violet-700 block dark:hidden"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+          ></path>
+        </svg>
+        <svg
+          class="fill-yellow-500 hidden dark:block"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+            </div>
+
             <!-- Mobile menu button -->
             <button
               id="mobile-menu-btn"
@@ -168,7 +199,7 @@
     </nav>
     
     <!-- Hero section -->
-    <section class="bg-[#FEFCF7] text-gray-600 body-font">
+    <section class="bg-[#FEFCF7] text-gray-600 body-font dark:bg-gray-800" >
       <div
         class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center"
       >
@@ -178,10 +209,10 @@
           <h1
             class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900"
           >
-            <p class="text-6xl font-primary">Fresh flavours</p>
-            <h2 class="h1-headings text-(--color-primary-2)">Fresh start</h2>
-          </h1>
-          <p class="mb-8 leading-relaxed">
+            <p class="text-6xl font-primary dark:text-gray-100">Fresh flavours</p>
+            <h2 class="h1-headings text-(--color-primary-2) font-primary">Fresh start</h2>
+          </h1> 
+          <p class="mb-8 leading-relaxed dark:text-gray-100">
             Our juices are not just about taste; <br>
             they're about nourishing your body <br>
             with essential vitamins, minerals,<br> 
@@ -189,7 +220,7 @@
           </p>
           <div class="flex justify-center">
             <button
-              class="inline-flex text-gray-800 bg-[#ffedaa] border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+              class="inline-flex text-gray-800 bg-[#ffedaa] border-1 py-2 px-6 focus:outline-none hover:bg-amber-500 rounded-bl-2xl text-lg"
             >
               Shop now
             </button>
@@ -206,10 +237,10 @@
     </section>
     
     <!-- Shop by flavours section -->
-    <section class="bg-(--color-secondary-2) py-16">
+    <section class="bg-(--color-secondary-2) py-16  dark:bg-gray-800">
       <div class="container mx-auto px-5">
         <!-- Title -->
-        <h2 class="title-font text-center text-3xl font-bold mb-10">
+        <h2 class="title-font text-center text-3xl font-bold mb-10 dark:text-gray-50">
           Shop by flavours
         </h2>
         <!-- Flavour cards grid -->
@@ -223,7 +254,7 @@
               class="w-12 h-12 object-contain"
               alt="Orange"
             />
-            <span class="font-medium text-lg">Orange</span>
+            <span class="font-medium text-lg dark:text-gray-800">Orange</span>
           </div>
 
           <!-- Mango -->
@@ -235,7 +266,7 @@
               class="w-12 h-12 object-contain"
               alt="Mango"
             />
-            <span class="font-medium text-lg">Mango</span>
+            <span class="font-medium text-lg dark:text-gray-800 ">Mango</span>
           </div>
 
           <!-- Apple -->
@@ -247,7 +278,7 @@
               class="w-12 h-12 object-contain"
               alt="Apple"
             />
-            <span class="font-medium text-lg">Apple</span>
+            <span class="font-medium text-lg dark:text-gray-800 ">Apple</span>
           </div>
 
           <!-- Kiwi -->
@@ -259,7 +290,7 @@
               class="w-12 h-12 object-contain"
               alt="Kiwi"
             />
-            <span class="font-medium text-lg">Kiwi</span>
+            <span class="font-medium text-lg dark:text-gray-800 ">Kiwi</span>
           </div>
 
           <!-- Watermelon -->
@@ -267,21 +298,21 @@
             class="bg-white rounded-2xl flex items-center gap-3 px-6 py-4 w-48"
           >
             <img
-              src="./Photo/watermelent.svg"
+              src="./Photo/watermelon.png"
               class="w-12 h-12 object-contain"
               alt="Watermelon"
             />
-            <span class="font-medium text-lg">Watermelon</span>
+            <span class="font-medium text-lg dark:text-gray-800">Watermelon</span>
           </div>
         </div>
       </div>
     </section>
     
     <!-- pubpular Product section -->
-    <section class="bg-(--color-secondary-4) py-16">
+    <section class="bg-(--color-secondary-4) py-16 dark:bg-gray-800">
       <div class="container mx-auto px-5">
         <!-- Title -->
-        <h2 class="title-font text-center text-3xl font-bold mb-10">
+        <h2 class="title-font text-center text-3xl font-bold mb-10 dark:text-gray-100">
           Popular picks
         </h2>
         <!-- Cards grid -->
@@ -296,7 +327,7 @@
               alt="Grapes juice"
             />
             <p class="text-sm text-gray-500 mb-1">200 ML</p>
-            <p class="title-font text-xl font-bold mb-2">Grapes juice</p>
+            <p class="title-font text-xl font-bold mb-2 dark:text-gray-50">Grapes juice</p>
             <div class="flex items-center gap-3">
               <span class="font-bold">$ 1.9 USD</span>
               <span class="text-gray-400 line-through text-sm"
@@ -361,7 +392,7 @@
       </div>
     </section>
     
-    <section class="bg-green-100 py-16">
+    <section class="bg-green-100 py-16 dark:bg-gray-800 ">
       <div
         class="container mx-auto px-5 flex flex-col md:flex-row items-center gap-10"
       >
@@ -371,7 +402,7 @@
           <div
             class="bg-(--color-primary-1) rounded-full w-72 h-72 md:w-80 md:h-80 absolute bottom-0 left-0 flex items-center justify-center"
           >
-            <p class="text-white font-bold text-center text-lg px-8">
+            <p class="text-white font-bold text-center text-lg px-8 dark:text-gray-100">
               Exploring the colorful tapestry of flavors, nutrients, and stories
               that define JuicyLite
             </p>
@@ -388,21 +419,21 @@
         </div>
 
         <!-- Right: Text + icons -->
-        <div class="flex-1">
+        <div class="flex-1 ">
           <!-- Title -->
-          <h2 class="title-font text-3xl font-bold mb-4">
+          <h2 class="title-font text-3xl font-bold mb-4 dark:text-gray-100">
             The potent health benefits enriching every sip of our juices
           </h2>
 
           <!-- Description -->
-          <p class="body-font text-gray-600 mb-6">
+          <p class="body-font text-gray-600 mb-6 dark:text-gray-100">
             We believe in the transformative power of nature's bounty,
             encapsulated in every drop of our carefully crafted juices.
           </p>
 
           <!-- Button -->
           <button
-            class="border border-(--color-secondary-3) bg-(--color-secondary-3) px-6 py-3 rounded-xl font-medium mb-10"
+            class="border border-(--color-secondary-3) bg-(--color-secondary-3) px-6 py-3 rounded-xl font-medium mb-10 dark:text-gray-100"
           >
             Our story
           </button>
@@ -411,7 +442,7 @@
           <div class="grid grid-cols-3 gap-6">
             <div class="flex flex-col items-start gap-2">
               <img src="./Photo/spon.svg" class="w-10 h-10" alt="No sugar" />
-              <p class="text-sm text-gray-600">No added sugar</p>
+              <p class="text-sm text-gray-600 dark:text-gray-100">No added sugar</p>
             </div>
 
             <div class="flex flex-col items-start gap-2">
@@ -420,22 +451,22 @@
                 class="w-10 h-10"
                 alt="Plant based"
               />
-              <p class="text-sm text-gray-600">100% plant-based</p>
+              <p class="text-sm text-gray-600 dark:text-gray-100">100% plant-based</p>
             </div>
 
             <div class="flex flex-col items-start gap-2">
               <img src="./Photo/dairy.svg" class="w-10 h-10" alt="Dairy free" />
-              <p class="text-sm text-gray-600">Dairy-free</p>
+              <p class="text-sm text-gray-600 dark:text-gray-100">Dairy-free</p>
             </div>
 
             <div class="flex flex-col items-start gap-2">
               <img src="./Photo/good.svg" class="w-10 h-10" alt="Fiber" />
-              <p class="text-sm text-gray-600">Good source of fiber</p>
+              <p class="text-sm text-gray-600 dark:text-gray-100">Good source of fiber</p>
             </div>
 
             <div class="flex flex-col items-start gap-2">
               <img src="./Photo/nothing.svg" class="w-10 h-10" alt="Natural" />
-              <p class="text-sm text-gray-600">Nothing artificial</p>
+              <p class="text-sm text-gray-600 dark:text-gray-100">Nothing artificial</p>
             </div>
           </div>
         </div>
@@ -443,9 +474,7 @@
     </section>
 
     <!-- Subscribe + Products section -->
-    <!-- <section class="relative overflow-hidden"> -->
-    <!-- Top part - light blue background -->
-    <div class="bg-(--color-secondary-2) py-16 text-center relative">
+    <div class="bg-(--color-secondary-2) py-16 text-center relative dark:bg-gray-800">
       <!-- Orange slice decoration (left) -->
       <img
         src=""
@@ -453,12 +482,12 @@
         alt=""
       />
       <!-- Title -->
-      <h2 class="title-font text-3xl font-bold mb-6 px-5">
+      <h2 class="title-font text-3xl font-bold mb-6 px-5 dark:text-gray-100">
         Discover one-of-a-kind flavors in our special menu
       </h2>
 
       <!-- Email input + button -->
-      <div class="flex flex-col items-center gap-3">
+      <div class="flex flex-col items-center gap-3 dark:text-gray-50">
         <input
           type="email"
           placeholder="Enter email address"
@@ -473,7 +502,7 @@
     </div>
 
     <!-- Bottom part - purple/lavender background -->
-    <div class="bg-(--color-secondary-1) pt-32 pb-16 px-5">
+    <div class="bg-(--color-secondary-1) pt-32 pb-16 px-5 dark:bg-gray-800">
       <!-- Cards -->
       <div
         class="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl"
@@ -518,7 +547,7 @@
     </div>
     <!-- </section> -->
     <section
-      class="bg-(--color-secondary-4) rounded-3xl mx-5 my-8 overflow-hidden relative"
+      class="bg-(--color-secondary-4) rounded-3xl mx-5 my-8 overflow-hidden relative dark:bg-gray-800"
     >
       <div
         class="container mx-auto px-8 py-10 flex flex-col md:flex-row items-center justify-between gap-6"
@@ -534,7 +563,7 @@
           </div>
 
           <!-- Title -->
-          <h2 class="title-font text-2xl md:text-3xl font-bold mb-2">
+          <h2 class="title-font text-2xl md:text-3xl font-bold mb-2 dark:text-gray-100">
             Taste the excitement
           </h2>
 
@@ -578,58 +607,59 @@
         </div>
       </div>
     </section>
+
     <!-- Footer -->
-    <footer class="bg-white shadow-lg mt-auto">
+    <footer class="bg-white shadow-lg mt-auto dark:bg-gray-800">
           <div
             class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
           >
             <!-- Column 1: Company Info -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Page</h3>
-              <p class="text-gray-500 mt-3">Home</p>
-              <p class="text-gray-500 mt-2">About</p>
-              <p class="text-gray-500 mt-2">Shop</p>
-              <p class="text-gray-500 mt-2">Block</p>
-              <p class="text-gray-500 mt-2">Contat</p>
-              <p class="text-gray-500 mt-2">Privacy Policy</p>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Page</h3>
+              <p class="text-gray-500 mt-3 dark:text-gray-50">Home</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">About</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Shop</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Block</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Contat</p>
+              <p class="text-gray-500 mt-2 dark:text-gray-50">Privacy Policy</p>
             </div>
 
             <!-- Column 2: Quick Links -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Utility</h3>
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Utility</h3>
               <ul class="mt-3 space-y-2">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Style Guide</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Instructions</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Changelog</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Licenses</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Link in Bio</a
                   >
                 </li>
@@ -638,35 +668,35 @@
 
             <!-- Column 3: Customer Service -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">
                 Customer Service
               </h3>
               <ul class="mt-3 space-y-2">
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >FAQs</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Shipping & Returns</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Privacy Policy</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="text-gray-500 hover:text-indigo-600 transition"
+                    class="text-gray-500 hover:text-indigo-600 transition dark:text-gray-50"
                     >Terms & Conditions</a
                   >
                 </li>
@@ -675,18 +705,18 @@
 
             <!-- Column 4: Newsletter Subscription -->
             <div>
-              <h3 class="text-xl font-semibold text-gray-800">Stay Updated</h3>
-              <p class="text-gray-500 mt-3">
+              <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-50">Stay Updated</h3>
+              <p class="text-gray-500 mt-3 dark:text-gray-50">
                 Subscribe to our newsletter for exclusive deals and updates.
               </p>
-              <div class="mt-4 flex">
+              <div class="mt-4 flex dark:text-gray-50">
                 <input
                   type="email"
                   placeholder="Enter your email"
                   class="w-full px-4 py-3 border border-gray-300 rounded-l-lg focus:outline-none focus:ring-1"
                 />
                 <button
-                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition"
+                  class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-3 rounded-r-lg transition dark:text-gray-50"
                 >
                   Subscribe
                 </button>
@@ -695,5 +725,6 @@
           </div>
           <!-- Bottom Bar -->
     </footer>
+
   </body>
 </html>

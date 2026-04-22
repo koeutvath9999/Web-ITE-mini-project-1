@@ -2,6 +2,8 @@
 @import "tailwindcss";
 @tailwind utilities;
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --font-family-heading: "Inter", sans-serif;
   --color-heading: #1a1a2e;
@@ -88,4 +90,8 @@
 
 @theme {
   --font-primary: "Sono", monospace;
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
 }
